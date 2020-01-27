@@ -7,7 +7,8 @@ const IMAGE_CATEGORIES = [
   'galaxy',
   'arctic',
   'cyberpunk',
-  'snow',
+  'winter',
+
 ];
 
 export default function Picture() {
