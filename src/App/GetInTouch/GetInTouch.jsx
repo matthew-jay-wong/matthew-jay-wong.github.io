@@ -145,7 +145,12 @@ export default function GetInTouch() {
           </a>
         ))}
       </div>
-
+      <p>DO YOU REMEMBER STARWARS ???</p>
+      <div className="IconRow">
+        {STARWARS_ICONS.map((icon) => (
+          <FontAwesomeIcon className="GetInTouchIcon" icon={icon} />
+        ))}
+      </div>
       <h5>** Just kidding, lmao who still carries a pager?</h5>
     </div>
   );
