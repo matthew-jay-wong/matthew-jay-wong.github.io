@@ -5,10 +5,9 @@ import './Picture.css';
 
 const IMAGE_CATEGORIES = [
   'galaxy',
-  'ocean',
-  'mountain',
   'arctic',
   'cyberpunk',
+  'snow',
 ];
 
 export default function Picture() {
