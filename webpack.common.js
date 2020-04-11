@@ -37,13 +37,24 @@ module.exports = {
           'style-loader',
           'css-loader',
         ],
+      },
+      {
+        test: /\.(mov|mp4)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              outputPath: 'images'
+            }  
+          }
+        ]
       }
     ],
   },
   resolve: {
     extensions: [
-      '.js', 
-      '.jsx', 
+      '.js',
+      '.jsx',
     ],
   },
   plugins: [
