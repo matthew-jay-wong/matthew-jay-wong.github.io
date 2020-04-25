@@ -9,7 +9,7 @@ export default function DesktopHome() {
         <a href="#home">
           <h1>Matt / Hew</h1>
         </a>
-        <span>Tech | Beer | Movies</span>
+        <span>Tech | Beer | Movies | Chillin</span>
       </div>
     </div>
   )
