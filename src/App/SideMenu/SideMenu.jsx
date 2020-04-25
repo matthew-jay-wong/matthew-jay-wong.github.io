@@ -6,7 +6,7 @@ import scrollToTop from '../Common/Scroll';
 export default function SideMenu() {
   return (
     <div className="side-menu">
-        <a href="!#" onClick={scrollToTop}>
+        <a href="# " onClick={scrollToTop}>
       <h2>
           Matt / Hew
       </h2>
