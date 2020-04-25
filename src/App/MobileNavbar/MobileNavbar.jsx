@@ -37,7 +37,7 @@ export default function MobileNavbar() {
       </button>
       <span className="title">
         <a
-          href="javascript:void(0);"
+          href="!#"
           onClick={scrollToTop}
         >
           Matt / Hew

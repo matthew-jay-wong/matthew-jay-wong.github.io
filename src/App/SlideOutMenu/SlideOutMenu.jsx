@@ -28,7 +28,7 @@ export default function SlideOutMenu() {
         </button>
         <div className="title">
           <a
-            href="javascript:void(0);"
+            href="!#"
             onClick={scrollToTop}
           >
             Matt / Hew
