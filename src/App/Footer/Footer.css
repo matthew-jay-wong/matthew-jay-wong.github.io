@@ -1,0 +1,17 @@
+.footer {
+  padding-bottom: 32px;
+}
+
+.footer > .quote {
+  text-align: center;
+}
+
+.footer > .icon-links {
+  display: flex;
+  justify-content: center;
+}
+
+.footer > .icon-links > a {
+  display: inline-block;
+  padding: 10px;
+}

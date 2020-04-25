@@ -1,0 +1,17 @@
+.home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.home > p {
+  text-align: center;
+}
+
+.home > .icon-links > a {
+  display: inline-block;
+  padding: 10px;
+}
