@@ -5,12 +5,10 @@ import './App.css';
 import MobileNavbar from './MobileNavbar/MobileNavbar';
 import SlideOutMenu from './SlideOutMenu/SlideOutMenu';
 
-import ExternalLink from './Common/ExternalLink';
-
 import Home from './Views/Home/Home';
 import About from './Views/About/About';
-import Projects from './Views/Projects/Projects';
-import Skills from './Views/Skills/Skills';
+// import Projects from './Views/Projects/Projects';
+// import Skills from './Views/Skills/Skills';
 import Thoughts from './Views/Thoughts/Thoughts';
 import ContactMe from './Views/ContactMe/ContactMe';
 import Footer from './Footer/Footer';
