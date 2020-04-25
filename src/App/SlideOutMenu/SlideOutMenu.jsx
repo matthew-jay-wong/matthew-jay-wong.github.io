@@ -19,7 +19,7 @@ export default function SlideOutMenu() {
       <div className="top-bar">
         <button
           className="menu-button"
-          onClick={scrollToTopCloseSideMenu}
+          onClick={closeSlideOutMenu}
         >
           <FontAwesomeIcon
             className="menu-icon"
@@ -28,8 +28,8 @@ export default function SlideOutMenu() {
         </button>
         <div className="title">
           <a
-            href="!#"
-            onClick={scrollToTop}
+            href="# "
+            onClick={scrollToTopCloseSideMenu}
           >
             Matt / Hew
           </a>
