@@ -12,12 +12,12 @@ export default function Footer() {
   return (
     <div className="footer">
       <div className="quote">
-        <ExternalLink url="https://youtu.be/Ls_8cFgBUj4?t=30">
+        <ExternalLink url="https://youtu.be/w_e5kx3ONfs?t=42">
           <h4>
-            "You gotta keep on livin'... L-I-V-I-N"
+          "If you are truly wild at heart, you'll fight for your dreams"
           </h4>
         </ExternalLink>
-        <h6>- Wooderson | Dazed and Confused (1993)</h6>
+        <h6>- The Good Witch (Sheryl Lee) | David Lynch's Wild at Heart (1990)</h6>
       </div>
       <div className="icon-links">
         <a href="mailto:matthew.jay.wong@gmail.com">

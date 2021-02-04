@@ -1,4 +1,8 @@
 .contact-me {
-  min-height: 100vh;
   padding-top: 5px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
 }
