@@ -54,7 +54,7 @@ export default function SlideOutMenu() {
         >
           Skills
         </a> */}
-        <a
+        {/* <a
           href="#thoughts"
           onClick={closeSlideOutMenu}
         >
@@ -65,7 +65,7 @@ export default function SlideOutMenu() {
           onClick={closeSlideOutMenu}
         >
           Contact Me
-        </a>
+        </a> */}
       </div>
     </div>
   )

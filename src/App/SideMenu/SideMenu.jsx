@@ -28,14 +28,14 @@ export default function SideMenu() {
       >
         Skills
       </a> */}
-      <a
+      {/* <a
         href="#thoughts"
       >
         Thoughts
       </a>
       <a href="#contact-me">
         Contact Me
-      </a>
+      </a> */}
     </div>
   )
 }

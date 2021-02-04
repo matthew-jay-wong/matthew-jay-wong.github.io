@@ -33,10 +33,10 @@ function App() {
         <Projects />
         <hr />
         <Skills /> */}
-          <hr />
+          {/* <hr />
           <Thoughts />
           <hr />
-          <ContactMe />
+          <ContactMe /> */}
         </div>
       </div>
       <Footer />
