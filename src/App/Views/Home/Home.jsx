@@ -15,8 +15,7 @@ export default function Home() {
       id="home"
     >
       <p>
-        Hey! My name is Matt. I'm currently in my fourth year at the <ExternalLink url="https://www.utoronto.ca/">University of Toronto</ExternalLink> studying <ExternalLink  url="https://web.cs.toronto.edu/">Computer Science</ExternalLink>.
-        I am currently working full-time as a full-stack developer at <ExternalLink url="https://www.tdsecurities.com/">TD Securities</ExternalLink> while finishing the last bit of my degree as a part-time student.
+        Hey! My name is Matt. I am currently working full-time as a full-stack developer at <ExternalLink url="https://www.rbccm.com/en/">RBC Capitol Markets</ExternalLink>.
         I like finding scalable and maintainable solutions for any problem space so if you have any good work, let's make something happen! 
         You can read more about me and what I have to offer <a href="#about">here</a>. 
         My resume can also be found <ExternalLink url={`${process.env.PUBLIC_URL}/software_developer_resume.pdf`}>here</ExternalLink>. 

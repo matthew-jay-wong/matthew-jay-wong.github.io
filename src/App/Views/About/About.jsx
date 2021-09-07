@@ -11,14 +11,9 @@ export default function About() {
     >
       <h2>About Me</h2>
       <p>
-        Like I said before, My name is Matt and I am a full-stack developer with a strong focus on building maintainable and scalable applications geared towards providing users with excellent experiences. 
-        Above all things I value collaboration, communication, and flexibility the most. 
-        As a developer I know that success in our field is directly related to one’s ability to listen to feedback and work in tandem with other teams and/or departments. 
-        Whether it’s designers, engineers, the marketing team, or front-line operations – a positive attitude combined with great interpersonal skills are the strongest indicators of any development team’s success. 
-        I see my ideal workplace as having an appreciation for quality (and the commitment/dedication it demands), constructive criticism, discussing potential solutions before writing code, and most of all, a culture that promotes a healthy work/life balance.
-      </p>
-      <p>
-        I am in my final year at UofT studying computer science currently working full-time at TD Securities while finishing the last bit of my degree part-time, 
+        Like I said before, My name is Matt and I've been working in tech, specifically capitol markets within the banks for over 2.5 years. 
+        I have done everything from doing whatever I can to quickly get new projects off the ground (helping with back + front end, initial pipeline and infrastructure setup), 
+        to quickly familiarizing myself with large code bases in order to bring value to the project as soon as possible. While red tape exists to slow down development, I've alwys tried my best to never let this be the reason I cannot progress with development by opening a dialog with them, I am always keen on
       </p>
       <p>
         If you or anyone you know has a cool project or gig in mind that you think I would be perfect for, 
