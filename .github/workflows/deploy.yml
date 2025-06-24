@@ -29,10 +29,12 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
+      - name: Set up Git credentials
+        run: |
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/matthew-jay-wong/matthew-jay-wong.github.io.git
 
       - name: Build and deploy
         env:
-          GIT_USER: ${{ secrets.GITHUB_TOKEN }}
+          GIT_USER: github-actions[bot]
         run: |
           npm run deploy
-
