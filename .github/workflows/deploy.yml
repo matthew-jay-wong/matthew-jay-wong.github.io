@@ -36,5 +36,6 @@ jobs:
       - name: Build and deploy
         env:
           GIT_USER: github-actions[bot]
+          DEPLOYMENT_BRANCH: gh-pages
         run: |
           npm run deploy
