@@ -1,6 +1,7 @@
 {
-  "name": "my-website",
-  "version": "0.0.0",
+  "name": "matt-hew-blog",
+  "version": "1.0.0",
+  "description": "Personal blog covering sports, tech, reading, movies & TV, and lifestyle topics",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",

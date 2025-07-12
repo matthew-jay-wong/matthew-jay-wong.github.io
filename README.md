@@ -1,41 +1,30 @@
-# Website
+# Matt Hew Blog
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Personal blog covering thoughts, insights, and musings on things that make it worth to wake up in the morning.
 
-## Installation
+## Categories
+
+- **Sports** - Motorsport, hockey, football, and baseball coverage
+- **Tech** - Programming, technology insights, and digital trends
+- **Reading** - Book reviews, recommendations, and literary discussions
+- **Movies & TV** - Entertainment reviews and analysis
+- **Lifestyle** - Personal development, wellness, and life reflections
+
+## Built With
+
+- [Docusaurus](https://docusaurus.io/) - Modern static website generator
+- Custom purple theme
+- Responsive design with mobile support
+
+## Development
 
 ```bash
-yarn
+npm install
+npm start
 ```
 
-## Local Development
-
-```bash
-yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-## Build
-
-```bash
-yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+Visit `http://localhost:3000` to view the site locally.
 
 ## Deployment
 
-Using SSH:
-
-```bash
-USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+This site is automatically deployed to GitHub Pages when changes are pushed to the main branch.

@@ -6,8 +6,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Matt Hew',
-  tagline: 'Thoughts & Prayers',
-  favicon: 'img/favicon.ico',
+  tagline: 'Thoughts, insights, and musings on things that make it worth to wake up in the morning',
+  favicon: 'img/favicon-purple.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -42,13 +42,7 @@ const config: Config = {
     [
       'classic',
       {
-        docs: {
-          sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+        docs: false,
         blog: {
           showReadingTime: true,
           feedOptions: {
@@ -58,7 +52,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/matthew-jay-wong/matthew-jay-wong.github.io/tree/main/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -73,23 +67,18 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/favicon-purple.svg',
     navbar: {
-      title: 'My Site',
-      logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
-      },
+      title: 'Matt Hew',
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
-        },
         {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/sports', label: 'Sports', position: 'left'},
+        {to: '/tech', label: 'Tech', position: 'left'},
+        {to: '/reading', label: 'Reading', position: 'left'},
+        {to: '/movies-tv', label: 'Movies & TV', position: 'left'},
+        {to: '/lifestyle', label: 'Lifestyle', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/matthew-jay-wong/matthew-jay-wong.github.io',
           label: 'GitHub',
           position: 'right',
         },
@@ -99,28 +88,23 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Content',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Blog',
+              to: '/blog',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Sports',
+              to: '/sports',
             },
             {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              label: 'Tech',
+              to: '/tech',
+            },
+            {
+              label: 'Reading',
+              to: '/reading',
             },
           ],
         },
@@ -128,17 +112,21 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'Movies & TV',
+              to: '/movies-tv',
+            },
+            {
+              label: 'Lifestyle',
+              to: '/lifestyle',
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/matthew-jay-wong/matthew-jay-wong.github.io',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Matt Hew. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

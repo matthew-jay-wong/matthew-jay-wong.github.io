@@ -1,19 +1,94 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+sports:
+  label: Sports
+  permalink: /sports
+  description: Sports analysis, commentary, and insights
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+tech:
+  label: Tech
+  permalink: /tech
+  description: Technology, programming, and digital innovation
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+reading:
+  label: Reading
+  permalink: /reading
+  description: Book reviews, recommendations, and literary discussions
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+movies:
+  label: Movies
+  permalink: /movies
+  description: Movie reviews and film analysis
+
+tv:
+  label: TV
+  permalink: /tv
+  description: Television show reviews and analysis
+
+entertainment:
+  label: Entertainment
+  permalink: /entertainment
+  description: Movies, TV, and entertainment industry insights
+
+lifestyle:
+  label: Lifestyle
+  permalink: /lifestyle
+  description: Personal development, wellness, and life reflections
+
+personal:
+  label: Personal
+  permalink: /personal
+  description: Personal thoughts and experiences
+
+wellness:
+  label: Wellness
+  permalink: /wellness
+  description: Health, wellness, and self-care
+
+growth:
+  label: Growth
+  permalink: /growth
+  description: Personal growth and development
+
+introduction:
+  label: Introduction
+  permalink: /introduction
+  description: Welcome and introductory posts
+
+programming:
+  label: Programming
+  permalink: /programming
+  description: Programming tutorials, tips, and insights
+
+books:
+  label: Books
+  permalink: /books
+  description: Book reviews and reading recommendations
+
+literature:
+  label: Literature
+  permalink: /literature
+  description: Literary analysis and discussions
+
+reviews:
+  label: Reviews
+  permalink: /reviews
+  description: Reviews of books, movies, TV shows, and more
+
+motorsport:
+  label: Motorsport
+  permalink: /motorsport
+  description: Formula 1, NASCAR, IndyCar, and other racing sports
+
+hockey:
+  label: Hockey
+  permalink: /hockey
+  description: NHL, international hockey, and ice hockey coverage
+
+football:
+  label: Football
+  permalink: /football
+  description: NFL, college football, and American football analysis
+
+baseball:
+  label: Baseball
+  permalink: /baseball
+  description: MLB, college baseball, and baseball commentary
