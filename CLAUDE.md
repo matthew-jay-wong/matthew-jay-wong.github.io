@@ -60,11 +60,25 @@ npm run typecheck
 - **Responsive**: Mobile-first approach, test on mobile devices
 - **Content Pages**: Organize in folders (src/pages/{category}/index.mdx) for better asset management
 
-## Key Learnings
+## Key Learnings & Configuration Notes
+
+### Design & UX
 - Fixed navbar positioning causes mobile menu issues - stick to default
 - Tag pages only exist if tags are used in actual blog posts
 - Cache clearing required when adding/removing blog posts
 - All tag buttons should use consistent secondary styling
+
+### Docusaurus Configuration
+- **Markdown hooks migration**: `onBrokenMarkdownLinks` moved from top-level config to `markdown.hooks.onBrokenMarkdownLinks` for Docusaurus v4 compatibility
+- **Future flags enabled**: `future.v4: true` in docusaurus.config.ts for v4 compatibility
+- **Blog truncation**: Use `<!--truncate-->` marker to control blog post previews on list pages
+- **MDX support**: All pages and blog posts support MDX for enhanced formatting
+
+### Sports Page Structure
+- **Main page** (`src/pages/sports/index.mdx`): Introduction, sport navigation buttons, consumption framework, content preview
+- **Blog posts**: Sports manifesto moved to dedicated blog post for better shareability
+- **Framework section**: Condensed rules for live games, content consumption, and weekly reflections
+- **Navigation**: Centered sport buttons (motorsport, hockey, football, baseball)
 
 ## File Structure Notes
 ```
@@ -80,10 +94,49 @@ blog/
 static/img/                     # Assets (favicon, logos, etc.)
 ```
 
-## Deployment
-- Automatic deployment to GitHub Pages via GitHub Actions
-- Build artifacts stored in `gh-pages` branch
-- No manual deployment steps required
+## Deployment & CI/CD
+
+### GitHub Actions Workflows
+
+**Production Deployment** (`.github/workflows/deploy.yml`)
+- **Trigger**: Push to `main` branch
+- **Process**: Two-stage deployment
+  1. **Build Job**:
+     - Runs on Ubuntu latest
+     - Checks out code with full git history (`fetch-depth: 0`)
+     - Sets up Node.js 18 with npm caching
+     - Installs dependencies (`npm install`)
+     - Builds Docusaurus site (`npm run build`)
+     - Uploads `build/` directory as Pages artifact
+  2. **Deploy Job**:
+     - Requires permissions: `pages: write`, `id-token: write`
+     - Deploys to `github-pages` environment
+     - Uses official GitHub Pages deployment action
+     - Returns deployment URL
+- **Artifacts**: Build output stored in `gh-pages` branch
+- **Result**: Live site updated at https://matthew-jay-wong.github.io
+
+**Test Deployment** (`.github/workflows/test-deploy.yml`)
+- **Trigger**: Pull requests to `main` branch
+- **Purpose**: CI/Quality gate before merging
+- **Process**: Single job
+  - Same setup as build job (checkout, Node 18, npm install)
+  - Runs `npm run build` to verify build succeeds
+  - Does NOT deploy - only validates
+- **Result**: PR can only merge if build passes
+
+### Deployment Requirements
+- Node.js 18+ (specified in workflow)
+- All dependencies must be in package.json/package-lock.json
+- Build must complete without errors
+- No manual deployment steps needed
+
+### Troubleshooting Deployments
+- **Build fails in GitHub Actions**: Check workflow logs for specific error
+- **Missing blog posts**: Run `npm run clear` to clear Docusaurus cache
+- **Broken links**: Check `onBrokenMarkdownLinks` warnings in build output
+- **404 on deployed site**: Ensure `trailingSlash: false` in docusaurus.config.ts
+- **Styling issues**: Clear browser cache and check custom.css
 
 ## Future Considerations
 - Consider adding more specific sports tags as content grows
